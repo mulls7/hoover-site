@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
+
+
+  $font-body: "Poppins", sans-serif;
+  $font-alt: "IBM Plex Mono", sans-serif;
+  
+  
+  $size-body: 1.3rem;
+  $size-h2: 4rem;
+  $size-h3: 2.2rem;
+  $size-button: 1.4rem;
+  $size-copyright: .75rem;
+
+  $weight-body: 300;
+  $weight-reg: 400;
+  $weight-semi: 600;
+  $weight-bold: 700;
+
+  $line-body: 1.95rem;
+  $line-h2: 3.5rem;
+  $line-h3: 3rem;
+
+  h1, h2 {
+    font-size: $size-h2;
+    font-weight: $weight-semi;
+    line-height: $line-h2;
+    margin-bottom: 2rem;
+    font-family: $font-body;
+  }
