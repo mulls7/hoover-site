@@ -132,6 +132,18 @@ table {
   border-spacing: 0;
 }
 
+.hero__image, .subhero__image {
+  width: 100%;
+}
+
+.home-latest-projects__pics img {
+  width: 50%;
+}
+
+.gallery-button img {
+  width: 50%;
+}
+
 html {
   font-family: "Roboto", sans-serif;
   background-color: rgb(171, 171, 171);

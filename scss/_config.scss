@@ -16,6 +16,18 @@ $color-yellow-300: rgba(255,210,157,1);
 $color-yellow-200: rgba(255,225,189,1);
 
 
+.hero__image, .subhero__image {
+  width: 100%;
+}
+
+.home-latest-projects__pics img {
+  width: 50%;
+}
+
+.gallery-button img {
+  width: 50%;
+}
+
 @mixin drop-shadow() {
 	box-shadow: 0px 4px 20px 5px rgba(0,0,0,0.500);
 }
