@@ -132,10 +132,35 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 h1, h2 {
   font-size: 4rem;
   font-weight: 700;
   line-height: 3.5rem;
   margin-bottom: 2rem;
   font-family: "Roboto Slab", serif;
+}
+
+h2 {
+  font-size: 2.375rem;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 46px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+p, li, a, label, button {
+  font-size: 1rem;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 23px;
+  text-decoration: none;
+  text-transform: none;
 }/*# sourceMappingURL=main.css.map */
