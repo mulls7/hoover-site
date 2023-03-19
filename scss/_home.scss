@@ -1,0 +1,55 @@
+
+.hero {
+  position: relative;
+  margin-bottom: 6rem;
+
+  &__overlay {
+    text-align: left;
+    position: absolute;
+    height: 0px;
+    z-index: 0;
+    width: 70%;
+    transform: translate(1rem, 10rem);
+  }
+
+  &__image {
+    display: block;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
+.hero__overlay  p {
+  font-size: 10vw;
+  margin-bottom: 0vw;
+}
+
+.hero__overlay span {
+  font-weight: $weight-bold;
+  text-transform: uppercase;
+}
+
+.hero__overlay img {
+  width: 3vw;
+}
+
+.hero__overlay .button {
+  margin-top: 6vw;
+  margin-bottom: 1vw;
+  font-size: 4vw;
+}
+
+.hero__overlay .button:hover {
+  text-decoration: none;
+}
+
+.page-home {
+  #medallion {
+    width: 33%;
+  }
+}

@@ -132,6 +132,20 @@ table {
   border-spacing: 0;
 }
 
+/* Center body and fix to minimum width */
+main {
+  min-width: 318px;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+}
+
+/* Images will always scale to be no wider than their container */
+img {
+  max-width: 100%;
+}
+
 a,
 body {
   color: rgb(44, 35, 25);
@@ -159,7 +173,6 @@ body {
 
 html {
   font-family: "Roboto", sans-serif;
-  background-color: rgb(171, 171, 171);
 }
 
 h1, h2 {
@@ -192,23 +205,23 @@ p, li, a, label, button {
 }
 
 header {
-  overflow: hidden;
   padding: 1.2rem;
-  margin-bottom: 40px;
+  padding-bottom: 0px;
+  margin-bottom: 2.5rem;
   position: static;
   z-index: 100;
-  align-items: start;
-  /*
-  position: fixed; 
-  top: 0;
-  width: 100%; 
-  z-index: 1;
-  */
+  align-items: center;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 2.4rem);
+  z-index: 1;
 }
-header ul {
-  list-style: none;
+header h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
 header .hamburger {
   display: none;
@@ -216,9 +229,10 @@ header .hamburger {
 }
 header .hamburger .bar {
   display: block;
-  width: 25px;
+  width: 21px;
   height: 3px;
-  margin: 5px auto;
+  border-radius: 0 3px;
+  margin: 4px auto;
   background-color: white;
   transition: 0.3s all ease;
 }
@@ -228,7 +242,116 @@ header .hamburger:hover {
 header .hamburger:active {
   transform: scale(0.8);
 }
+header nav {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+header nav ul {
+  display: flex;
+  margin: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+header nav li {
+  margin: 0 auto;
+  margin-left: 3rem;
+  list-style: none;
+}
+header nav li .page-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.4rem;
+  transition: all 0.3s;
+  font-size: 1.125rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header nav li .active {
+  font-weight: 700;
+}
+header nav li .page-link:before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transition: all 0.3s;
+  color: #fff;
+}
+header nav li .page-link:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transition: all 0.5s;
+  color: #fff;
+}
+header nav li .page-link:hover:before, header nav li .page-link:hover:after {
+  left: 0;
+}
+header nav li .page-link:hover {
+  letter-spacing: 0.2rem;
+}
+header nav li:first-child {
+  margin-left: 0rem;
+}
 
+@media screen and (max-width: 768px) {
+  nav .hamburger {
+    display: block;
+  }
+  nav .hamburger.active1 .bar:nth-child(2) {
+    opacity: 0;
+  }
+  nav .hamburger.active1 .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  nav .hamburger.active1 .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  nav .pages__list {
+    opacity: 0;
+    position: absolute;
+    top: 100vh;
+    right: 0;
+    flex-direction: column;
+    background-color: rgb(78, 92, 60);
+    width: 100%;
+    text-align: right;
+    transition: 0.3s;
+    z-index: -1;
+    overflow: hidden;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transition: 350ms ease;
+    font-size: 2rem;
+  }
+  nav .pages__list li {
+    margin: 2rem 0;
+  }
+  nav .pages__list.active1 {
+    position: absolute;
+    top: 69px;
+    right: 0;
+    z-index: 0;
+    font-size: 2.5rem;
+    opacity: 0.85;
+  }
+}
 footer {
   color: #fff;
   background-color: rgb(78, 92, 60);
@@ -238,4 +361,56 @@ footer a {
 }
 footer ul {
   list-style: none;
+}
+
+.hero {
+  position: relative;
+  margin-bottom: 6rem;
+}
+.hero__overlay {
+  text-align: left;
+  position: absolute;
+  height: 0px;
+  z-index: 0;
+  width: 70%;
+  transform: translate(1rem, 10rem);
+}
+.hero__image {
+  display: block;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 35rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.hero__overlay p {
+  font-size: 10vw;
+  margin-bottom: 0vw;
+}
+
+.hero__overlay span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero__overlay img {
+  width: 3vw;
+}
+
+.hero__overlay .button {
+  margin-top: 6vw;
+  margin-bottom: 1vw;
+  font-size: 4vw;
+}
+
+.hero__overlay .button:hover {
+  text-decoration: none;
+}
+
+.page-home #medallion {
+  width: 33%;
 }/*# sourceMappingURL=main.css.map */
