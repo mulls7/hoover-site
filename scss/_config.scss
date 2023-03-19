@@ -2,8 +2,8 @@ $color-green-primary: rgba(78,92,60,1);
 $color-yellow-primary: rgba(255,180,91,1);
 $color-accent: rgba(69,153,252,1);
 $color-body: rgba(44,35,25,1);
-$color-light: rgba(114,106,102,1);
-$color-lighter: rgba(165,157,153,1);
+$color-grey: rgba(114,106,102,1);
+$color-lightgrey: rgba(165,157,153,1);
 $color-green-600: rgba(62,74,48,1);
 $color-green-700: rgba(47,55,36,1);
 $color-green-800: rgba(31,37,24,1);
@@ -15,6 +15,69 @@ $color-yellow-400: rgba(255,195,124,1);
 $color-yellow-300: rgba(255,210,157,1);
 $color-yellow-200: rgba(255,225,189,1);
 
+@mixin link-hover {
+  &{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-bottom: .4rem;
+    transition: all .3s;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transition: all .3s;
+    color: #fff;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transition: all .5s;
+    color: #fff;
+  }
+
+  &:hover:before, &:hover:after {
+    left: 0;
+  }
+}
+/* Center body and fix to minimum width */
+main {
+  min-width: 318px;
+  box-sizing: border-box;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-left: auto;
+}
+
+/* Images will always scale to be no wider than their container */
+img {
+  max-width: 100%;
+}
+
+a,
+body {
+  color: $color-body;
+}
+
+.white {
+  color: #fff;
+}
+
+.yellow-emphasis {
+  color: $color-yellow-primary;
+}
 
 .hero__image, .subhero__image {
   width: 100%;

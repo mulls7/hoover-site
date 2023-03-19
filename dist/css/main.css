@@ -132,6 +132,19 @@ table {
   border-spacing: 0;
 }
 
+a,
+body {
+  color: rgb(44, 35, 25);
+}
+
+.white {
+  color: #fff;
+}
+
+.yellow-emphasis {
+  color: rgb(255, 180, 91);
+}
+
 .hero__image, .subhero__image {
   width: 100%;
 }
@@ -176,4 +189,53 @@ p, li, a, label, button {
   line-height: 23px;
   text-decoration: none;
   text-transform: none;
+}
+
+header {
+  overflow: hidden;
+  padding: 1.2rem;
+  margin-bottom: 40px;
+  position: static;
+  z-index: 100;
+  align-items: start;
+  /*
+  position: fixed; 
+  top: 0;
+  width: 100%; 
+  z-index: 1;
+  */
+  display: flex;
+  justify-content: space-between;
+}
+header ul {
+  list-style: none;
+}
+header .hamburger {
+  display: none;
+  transition: 0.1s ease;
+}
+header .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+  transition: 0.3s all ease;
+}
+header .hamburger:hover {
+  transform: scale(1.09);
+}
+header .hamburger:active {
+  transform: scale(0.8);
+}
+
+footer {
+  color: #fff;
+  background-color: rgb(78, 92, 60);
+}
+footer a {
+  color: #fff;
+}
+footer ul {
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */
