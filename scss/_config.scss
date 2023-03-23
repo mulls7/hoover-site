@@ -31,9 +31,10 @@ $color-yellow-200: rgba(255,225,189,1);
 main {
   min-width: 318px;
   box-sizing: border-box;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   margin-left: auto;
+  overflow: hidden;
 }
 
 /* Images will always scale to be no wider than their container */
@@ -51,6 +52,7 @@ img {
     color: #fff;
     @include text-style-button();
     margin: 0;
+    margin-bottom: 1rem;
   }
 
   .button-yellow {
@@ -62,6 +64,7 @@ img {
     color: $color-body;
     @include text-style-button();
     margin: 0;
+    margin-bottom: 1rem;
   }
 
 a,
@@ -79,10 +82,6 @@ body {
 
 .hero__image, .subhero__image {
   width: 100%;
-}
-
-.home-latest-projects__pics img {
-  width: 50%;
 }
 
 .gallery-button img {

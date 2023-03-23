@@ -1,0 +1,36 @@
+//Contact Form
+  .contact {
+    background-color: $color-yellow-200;
+    width: 101%;
+    margin-left: -1.25rem;
+    margin-bottom: 2rem;
+    align-content: center;
+    padding: 1.25rem;
+    padding-right: calc(1.25rem + 1vw);
+
+    .contact-form {
+      background-color: #fff;
+      padding: 1.25rem;
+      width: fit-content;
+      border: 1px solid $color-green-primary;
+      border-radius: 15px;
+
+      fieldset {
+        width: fit-content;
+        padding-right: 1.25rem;
+      } 
+
+      legend {
+        @include text-style-heading-2();
+        margin-bottom: 1rem;
+      }
+      input, textarea {
+        border: none;
+        background-color: #DCDED8;
+        @include text-style-body;
+        padding: .5rem;
+        border-radius: 3px 15px 3px 3px;
+        width: 100%;
+      }
+    }
+  }

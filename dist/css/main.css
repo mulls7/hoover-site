@@ -136,9 +136,10 @@ table {
 main {
   min-width: 318px;
   box-sizing: border-box;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   margin-left: auto;
+  overflow: hidden;
 }
 
 /* Images will always scale to be no wider than their container */
@@ -163,6 +164,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   margin: 0;
+  margin-bottom: 1rem;
 }
 
 .button-yellow {
@@ -182,6 +184,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   margin: 0;
+  margin-bottom: 1rem;
 }
 
 a,
@@ -199,10 +202,6 @@ body {
 
 .hero__image, .subhero__image {
   width: 100%;
-}
-
-.home-latest-projects__pics img {
-  width: 50%;
 }
 
 .gallery-button img {
@@ -240,6 +239,7 @@ p, li, a, label, button {
   line-height: 23px;
   text-decoration: none;
   text-transform: none;
+  margin-bottom: 1rem;
 }
 
 header {
@@ -422,7 +422,7 @@ footer ul {
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
-  height: 35rem;
+  height: 39rem;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -431,4 +431,59 @@ footer ul {
 
 .page-home #medallion {
   width: 33%;
+}
+.page-home #home-latest-projects--button-top {
+  display: none;
+}
+.page-home .home-latest-projects__pics img {
+  margin-bottom: 1rem;
+}
+
+.contact {
+  background-color: rgb(255, 225, 189);
+  width: 101%;
+  margin-left: -1.25rem;
+  margin-bottom: 2rem;
+  align-content: center;
+  padding: 1.25rem;
+  padding-right: calc(1.25rem + 1vw);
+}
+.contact .contact-form {
+  background-color: #fff;
+  padding: 1.25rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid rgb(78, 92, 60);
+  border-radius: 15px;
+}
+.contact .contact-form fieldset {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 1.25rem;
+}
+.contact .contact-form legend {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.contact .contact-form input, .contact .contact-form textarea {
+  border: none;
+  background-color: #DCDED8;
+  font-size: 1rem;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 23px;
+  text-decoration: none;
+  text-transform: none;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 3px 15px 3px 3px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
