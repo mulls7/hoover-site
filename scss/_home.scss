@@ -24,30 +24,6 @@
   }
 }
 
-.hero__overlay  p {
-  font-size: 10vw;
-  margin-bottom: 0vw;
-}
-
-.hero__overlay span {
-  font-weight: $weight-bold;
-  text-transform: uppercase;
-}
-
-.hero__overlay img {
-  width: 3vw;
-}
-
-.hero__overlay .button {
-  margin-top: 6vw;
-  margin-bottom: 1vw;
-  font-size: 4vw;
-}
-
-.hero__overlay .button:hover {
-  text-decoration: none;
-}
-
 .page-home {
   #medallion {
     width: 33%;
