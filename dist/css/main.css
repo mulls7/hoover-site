@@ -142,12 +142,20 @@ main {
   overflow: hidden;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* Images will always scale to be no wider than their container */
 img {
   max-width: 100%;
 }
 
-.button {
+.button, #button {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
@@ -165,6 +173,10 @@ img {
   letter-spacing: 2.5px;
   margin: 0;
   margin-bottom: 1rem;
+}
+
+#button {
+  margin-bottom: 0;
 }
 
 .button-yellow {
@@ -231,6 +243,29 @@ h2 {
   text-transform: uppercase;
 }
 
+.h2-text-style {
+  font-size: 2.25rem;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 42px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 p, li, a, label, button {
   font-size: 1rem;
   font-family: "Roboto";
@@ -245,7 +280,7 @@ p, li, a, label, button {
 header {
   padding: 1.2rem;
   padding-bottom: 0px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0;
   position: static;
   z-index: 100;
   align-items: center;
@@ -253,8 +288,7 @@ header {
   justify-content: space-between;
   position: absolute;
   top: 0;
-  width: calc(100vw - 2.4rem);
-  z-index: 1;
+  width: 100vw;
 }
 header h1 {
   margin: 0;
@@ -396,13 +430,105 @@ header nav li:first-child {
 }
 footer {
   color: #fff;
-  background-color: rgb(78, 92, 60);
+  text-align: center;
 }
 footer a {
   color: #fff;
 }
 footer ul {
   list-style: none;
+  padding: 0;
+}
+footer ul li a {
+  margin: 0;
+  padding: 0;
+}
+footer .footer__logo {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .footer__nav {
+  background-color: rgb(78, 92, 60);
+  padding: 1rem;
+}
+footer .footer__social {
+  background-color: rgb(62, 74, 48);
+  padding: 2rem;
+}
+footer .footer__social ul {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+}
+footer .footer__social ul li {
+  margin: 0;
+  padding: 0;
+}
+footer .footer__social ul li img {
+  margin: 0;
+  padding: 0;
+}
+footer .footer__address {
+  background-color: rgb(47, 55, 36);
+  padding: 2rem;
+  margin-bottom: -5px;
+}
+footer .footer__address img {
+  vertical-align: middle;
+  position: relative;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+footer .footer__contact {
+  background-color: rgb(31, 37, 24);
+  padding: 2rem;
+  margin-bottom: -5px;
+}
+footer .footer__contact img {
+  vertical-align: middle;
+  position: relative;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+footer .footer__contact a:first-child {
+  margin-right: 1rem;
+}
+footer .footer__copyright {
+  background-color: #10120C;
+  padding: 1.3rem;
+}
+footer .footer__copyright p {
+  margin: 0;
+  padding: 0;
+}
+footer .pages__list {
+  padding: 0;
+  margin: 0;
+}
+footer .pages__list li {
+  margin: 0.75rem;
+}
+footer .page-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  transition: all 0.3s;
+  font-size: 1.125rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+footer .active {
+  font-weight: 700;
 }
 
 .hero {
@@ -441,25 +567,17 @@ footer ul {
 
 .contact {
   background-color: rgb(255, 225, 189);
-  width: 101%;
-  margin-left: -1.25rem;
+  width: 100vw;
   margin-bottom: 2rem;
-  align-content: center;
-  padding: 1.25rem;
-  padding-right: calc(1.25rem + 1vw);
+  padding: 2rem 1.25rem;
 }
 .contact .contact-form {
   background-color: #fff;
   padding: 1.25rem;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   border: 1px solid rgb(78, 92, 60);
   border-radius: 15px;
-}
-.contact .contact-form fieldset {
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-right: 1.25rem;
+  margin-top: 2rem;
 }
 .contact .contact-form legend {
   font-size: 1.5rem;

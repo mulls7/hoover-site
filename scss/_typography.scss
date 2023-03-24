@@ -156,6 +156,15 @@
     @include text-style-heading-1()
   }
 
+  .h2-text-style {
+    @include text-style-d-heading-2();
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    @include text-style-heading-3()
+  }
+
   p, li, a, label, button {
     @include text-style-body()
   }

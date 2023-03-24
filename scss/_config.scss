@@ -37,13 +37,20 @@ main {
   overflow: hidden;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* Images will always scale to be no wider than their container */
 img {
   max-width: 100%;
 }
 
 //Button
-  .button {
+  .button, #button {
     display: block;
     width: fit-content;
     padding: 1rem 4rem;
@@ -53,6 +60,10 @@ img {
     @include text-style-button();
     margin: 0;
     margin-bottom: 1rem;
+  }
+
+  #button {
+    margin-bottom: 0;
   }
 
   .button-yellow {
