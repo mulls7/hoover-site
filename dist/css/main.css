@@ -649,4 +649,11 @@ footer .active {
   padding: 0.5rem;
   border-radius: 3px 15px 3px 3px;
   width: 100%;
+}
+
+.page-services .services__services ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
