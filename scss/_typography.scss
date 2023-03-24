@@ -144,16 +144,12 @@
     font-family: $font-body;
   }
 
-  h1, h2 {
-    font-size: $size-h2;
-    font-weight: $weight-bold;
-    line-height: $line-h2;
-    margin-bottom: 2rem;
-    font-family: $font-head;
-  }
+ 
 
   h2 {
+    margin-bottom: 1rem;
     @include text-style-heading-1()
+    
   }
 
   .h2-text-style {
@@ -162,6 +158,10 @@
   }
 
   h3 {
+    @include text-style-heading-2()
+  }
+
+  h4 {
     @include text-style-heading-3()
   }
 

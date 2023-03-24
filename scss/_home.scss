@@ -1,7 +1,7 @@
 
 .hero {
   position: relative;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 
   &__overlay {
     text-align: left;
@@ -33,9 +33,16 @@
     display: none;
   }
 
+  .home-latest-projects {
+    margin-top: 4rem;
+  }
+
   .home-latest-projects__pics {
     img {
       margin-bottom: 1rem;
     }
+  }
+  h2 {
+    @include text-style-heading-2;
   }
 }

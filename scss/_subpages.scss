@@ -1,0 +1,27 @@
+.subhero {
+  position: relative;
+  margin-bottom: 4rem;
+
+  &__overlay {
+    text-align: left;
+    position: absolute;
+    height: 0px;
+    z-index: 0;
+    width: 70%;
+    transform: translate(1.25rem, 16rem);
+    h2 {
+      color: #fff;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 22rem;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}

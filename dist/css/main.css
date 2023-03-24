@@ -224,15 +224,8 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2 {
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 3.5rem;
-  margin-bottom: 2rem;
-  font-family: "Roboto Slab", serif;
-}
-
 h2 {
+  margin-bottom: 1rem;
   font-size: 2.375rem;
   font-family: "Roboto Slab";
   font-weight: 700;
@@ -256,6 +249,17 @@ h2 {
 }
 
 h3 {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h4 {
   font-size: 1.125rem;
   font-family: "Roboto";
   font-weight: 300;
@@ -533,7 +537,7 @@ footer .active {
 
 .hero {
   position: relative;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 .hero__overlay {
   text-align: left;
@@ -561,13 +565,54 @@ footer .active {
 .page-home #home-latest-projects--button-top {
   display: none;
 }
+.page-home .home-latest-projects {
+  margin-top: 4rem;
+}
 .page-home .home-latest-projects__pics img {
   margin-bottom: 1rem;
+}
+.page-home h2 {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.subhero {
+  position: relative;
+  margin-bottom: 4rem;
+}
+.subhero__overlay {
+  text-align: left;
+  position: absolute;
+  height: 0px;
+  z-index: 0;
+  width: 70%;
+  transform: translate(1.25rem, 16rem);
+}
+.subhero__overlay h2 {
+  color: #fff;
+}
+.subhero__image {
+  display: block;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 22rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
 }
 
 .contact {
   background-color: rgb(255, 225, 189);
   width: 100vw;
+  margin-top: 4rem;
   margin-bottom: 2rem;
   padding: 2rem 1.25rem;
 }
