@@ -36,15 +36,15 @@
     <img src="images/subhero-about.png" alt="ferns" class="subhero__image">
   </div>
   <main class="page-about">
-    <section>
+    <section id="about-content">
       <div>
         <h3>Who we are</h3>
         <p>We are a small family owned business with a knack for getting things done.  Our knowledge, experience, and hard work enables us to take on all obstacles that come our way, in order to meet and exceed our customers expectations.</p>
       </div>
-      <div>
+      <div id="hoover-pic">
         <figure>
           <img src="images/hoover-brothers.png" alt="the  hoover brothers, Collin on the left and Braydon on the right">
-          <figcaption>The Hoover Brothers: Left: Collin. Right: Braydon.</figcaption>
+          <figcaption><i>The Hoover Brothers: Left: Collin. Right: Braydon.</i></figcaption>
         </figure>
       </div>
       <div>
@@ -56,39 +56,46 @@
         <p>We want to help you! Whatever the service is that you hire us for, you can be assured that the service will be professional. We love listen to what you want, and provide our professional opinion. We use the best products on the market in order to insure quality and longevity. We are local and care very much for our community. We'd love spend time to get to know you, and you can be assured that every job will have top-notch quality that we guarantee.</p>
       </div>
     </section>
-    <a href="gallery.html" class="gallery-button"><img src="images/gallery-link.png"></img>See Pics of Our Work &#xbb;</a>
-    <section>
-      <div>
-        <h2>Ready to get started?</h2>
-        <p>Contact us &#xbb;</p>
-      </div>
-      <div class="contact-form">
-        <form>
-          <fieldset>
-            <legend>Contact Us
-            </legend>
-            <label>Name
-              <input type="text" name="name" size="30" maxlength="100">
-            </label>
-          </br>
-            <label>Email
-              <input type="email" name="email" size="30" maxlength="100">
-            </label>
-          </br>
-          <label>Phone
-            <input type="text" name="phone" size="30" maxlength="12">
+    <a href="gallery.html" class="gallery-button">
+      <img src="images/gallery-link.png"></img>
+      <div class="text">See Pics of Our Work &#xbb;</div>
+    </a>
+  </main>
+  
+  <section class="contact">
+    <div class="contact-desc">
+      <h2>Contact Us Today!</h2>
+      <h3>Schedule a Consultation</h3>
+      <p class="h2-text-style">(555) 555-555</p>
+      <p>Are you ready to have the best looking yard in the neighborhood? Call the number or fill out this form and we’ll get back to you within two days</p>
+    </div>
+    <div class="contact-form">
+      <form>
+        <fieldset>
+          <legend>Contact Us
+          </legend>
+          <label>Name:</br>
+            <input type="text" name="name" size="30" maxlength="100">
           </label>
         </br>
-        <label>Message
-          <textarea name="message" cols="20" rows="4"></textarea>
+          <label>Email:</br>
+            <input type="email" name="email" size="30" maxlength="100">
+          </label>
+        </br>
+        <label>Phone:</br>
+          <input type="text" name="phone" size="30" maxlength="12">
         </label>
       </br>
-          <input type="submit" value="Submit" />
-        </fieldset>
-        </form>
-      </div> 
-    </section>
-  </main>
+      <label>Message:</br>
+        <textarea name="message" cols="20" rows="4"></textarea>
+      </label>
+    </br>
+        <input id="button" type="submit" value="Submit" />
+      </fieldset>
+      </form>
+    </div> 
+  </section>
+  
   <footer>
     <div class="footer__logo">
       <a href="index.html">

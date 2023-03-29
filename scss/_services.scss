@@ -25,7 +25,17 @@
   width: 100vw;
   margin-top: 4rem;
   margin-bottom: 4rem;
-  padding: 2rem 1.25rem;
+  padding: 3rem 1.25rem;
+
+  h2 {
+    @include text-style-heading-2
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .button {
+    margin-bottom: 0;
+  }
 }
 
 .gallery-button {

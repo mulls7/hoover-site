@@ -610,6 +610,17 @@ footer .active {
   z-index: -1;
 }
 
+.page-about figure figcaption {
+  text-align: right;
+  font-style: italic;
+}
+.page-about #about-content div {
+  margin-bottom: 2rem;
+}
+.page-about .gallery-button {
+  margin: 0;
+}
+
 .page-gallery .gallery-list__pic {
   margin-bottom: 1rem;
 }
@@ -675,7 +686,23 @@ footer .active {
   width: 100vw;
   margin-top: 4rem;
   margin-bottom: 4rem;
-  padding: 2rem 1.25rem;
+  padding: 3rem 1.25rem;
+}
+.full-width-yellow h2 {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.full-width-yellow p {
+  margin-bottom: 0;
+}
+.full-width-yellow .button {
+  margin-bottom: 0;
 }
 
 .gallery-button {
