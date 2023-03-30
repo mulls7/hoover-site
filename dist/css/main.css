@@ -667,6 +667,34 @@ footer .active {
   width: 100%;
 }
 
+.page-contact .contact-info svg, .page-contact .address svg {
+  vertical-align: middle;
+  position: relative;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.page-contact .contact-info a {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.page-contact .contact-info {
+  width: 100%;
+}
+@media screen and (min-width: 367px) {
+  .page-contact .contact-info {
+    display: flex;
+    gap: 1rem;
+  }
+}
+.page-contact .contact {
+  background: none;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .page-services .services__services ul {
   list-style-type: none;
   margin: 0;
