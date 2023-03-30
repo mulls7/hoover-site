@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | HBPS</title>
   <link rel="stylesheet" href="css/main.css"/>
-  
+  <script>
+    function lockScroll() {
+          document.body.classList.toggle('lock-scroll');
+    }
+</script>
 </head>
 <body data-nav="false">
   <header class="header-home">
@@ -19,6 +23,7 @@
         </svg>
       </a>
     </h1>
+
     <nav>
         <ul class="pages__list">
           <li><a href="index.html" class="page-link white active">Home</a></li>
@@ -27,7 +32,7 @@
           <li><a href="about.html" class="page-link white">About</a></li>
           <li><a href="contact.html" class="page-link white">Contact</a></li>
         </ul>
-      <div id="nav-toggle" onClick="toggleNav()" class="hamburger">
+      <div id="nav-toggle" onClick="lockScroll();toggleNav();" class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -142,5 +147,7 @@
     </div>
   </footer>
   <script src="scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </body>
 </html>

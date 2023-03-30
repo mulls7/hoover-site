@@ -20,6 +20,12 @@ document.querySelectorAll("li").forEach(n => n.addEventListener('click', () => {
 console.log("he")
 
 
+// if ($('pages__list').has('')) {
+//   $('body').addClass("fixed-position");
+// } else {
+//   $('body').removeClass("fixed-position");
+// }
+
 
 /*
   $(function() {

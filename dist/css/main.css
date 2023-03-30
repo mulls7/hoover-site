@@ -315,13 +315,7 @@ header .hamburger .bar {
   margin: 4px auto;
   background-color: white;
   transition: 0.3s all ease;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
-}
-header .hamburger:hover {
-  transform: scale(1.09);
-}
-header .hamburger:active {
-  transform: scale(0.8);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
 }
 header nav {
   width: -moz-fit-content;
@@ -391,6 +385,10 @@ header nav li:first-child {
   margin-left: 0rem;
 }
 
+.lock-scroll {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
   nav .hamburger {
     display: block;
@@ -399,37 +397,39 @@ header nav li:first-child {
     opacity: 0;
   }
   nav .hamburger.active1 .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
+    border-radius: 3px;
   }
   nav .hamburger.active1 .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
+    border-radius: 3px;
   }
   nav .pages__list {
     opacity: 0;
     position: absolute;
-    top: 100vh;
-    right: 0;
+    top: 0px;
+    right: -100vw;
     flex-direction: column;
     background-color: rgb(78, 92, 60);
-    width: 100%;
+    width: 50%;
     text-align: right;
     transition: 0.3s;
     z-index: -1;
     overflow: hidden;
     padding-left: 3rem;
-    padding-right: 3rem;
+    padding-right: 1.25rem;
+    padding-top: 6rem;
     transition: 350ms ease;
-    font-size: 2rem;
+    height: 100vh;
   }
   nav .pages__list li {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
   nav .pages__list.active1 {
     position: absolute;
-    top: 69px;
-    right: 0;
+    top: 0px;
+    right: 0px;
     z-index: 0;
-    font-size: 2.5rem;
     opacity: 0.85;
   }
 }
