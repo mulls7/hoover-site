@@ -136,6 +136,7 @@ table {
 body {
   overflow-x: hidden;
   overflow-y: scroll;
+  position: relative;
 }
 
 main {
@@ -413,10 +414,10 @@ header nav li:first-child {
     opacity: 0;
     position: absolute;
     top: 0px;
-    right: -100vw;
+    right: 0px;
     flex-direction: column;
     background-color: rgb(78, 92, 60);
-    width: 50%;
+    width: 0%;
     text-align: right;
     transition: 0.3s;
     z-index: -1;
@@ -432,6 +433,7 @@ header nav li:first-child {
   }
   nav .pages__list.active1 {
     position: absolute;
+    width: 50%;
     top: 0px;
     right: 0px;
     z-index: 0;
