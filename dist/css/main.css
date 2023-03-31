@@ -133,6 +133,11 @@ table {
 }
 
 /* Center body and fix to minimum width */
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 main {
   min-width: 318px;
   box-sizing: border-box;

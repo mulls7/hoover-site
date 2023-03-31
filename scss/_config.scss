@@ -28,7 +28,10 @@ $color-yellow-200: rgba(255,225,189,1);
 }
 
 /* Center body and fix to minimum width */
-
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 
 main {
   min-width: 318px;
