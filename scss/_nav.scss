@@ -155,7 +155,7 @@ header {
       right: 0px;
       flex-direction: column;
       background-color: $color-green-primary;
-      width: 0%;
+      width: 50%;
       text-align: right;
       transition: 0.3s;
       z-index: -1;
@@ -174,7 +174,6 @@ header {
 
     .pages__list.active1 {
       position: absolute;
-      width: 50%;
       top: 0px;
       right: 0px;
       z-index: 0;
