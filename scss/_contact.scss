@@ -10,11 +10,10 @@
       background-color: #fff;
       padding: 1.25rem;
       width: 100%;
-      border: 1px solid $color-green-primary;
+      border: none;
       border-radius: 15px;
       margin-top: 2rem;
-
-     
+      @include drop-shadow2();
 
       legend {
         @include text-style-heading-2();

@@ -107,6 +107,9 @@ body {
 @mixin drop-shadow() {
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.7);
 }
+@mixin drop-shadow2() {
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
 
 
 
