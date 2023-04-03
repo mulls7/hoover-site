@@ -179,6 +179,11 @@ img {
   letter-spacing: 2.5px;
   margin: 0;
   margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+.button:hover, #button:hover {
+  background-color: rgb(255, 180, 91);
+  color: rgb(44, 35, 25);
 }
 
 #button {
@@ -203,6 +208,11 @@ img {
   letter-spacing: 2.5px;
   margin: 0;
   margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+.button-yellow:hover {
+  background-color: rgb(78, 92, 60);
+  color: #fff;
 }
 
 a,

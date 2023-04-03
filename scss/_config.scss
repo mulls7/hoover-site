@@ -57,6 +57,13 @@ img {
   max-width: 100%;
 }
 
+@mixin button-hover-green(){
+  background-color: $color-green-primary;
+}
+@mixin button-hover-yellow(){
+  background-color: $color-yellow-primary;
+}
+
 //Button
   .button, #button {
     display: block;
@@ -68,6 +75,11 @@ img {
     @include text-style-button();
     margin: 0;
     margin-bottom: 1rem;
+    transition: all .2s ease;
+    &:hover {
+      @include button-hover-yellow();
+      color: $color-body;
+    }
   }
 
   #button {
@@ -84,7 +96,15 @@ img {
     @include text-style-button();
     margin: 0;
     margin-bottom: 1rem;
+    transition: all .2s ease;
+    
+    &:hover {
+      @include button-hover-green();
+      color: #fff;
+    }
   }
+
+
 
 a,
 body {
