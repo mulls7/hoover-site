@@ -421,6 +421,9 @@ header nav li:first-child {
   }
 }
 @media screen and (min-width: 768px) {
+  header nav li {
+    margin-left: 2rem;
+  }
   header nav li .page-link {
     padding-bottom: 0;
     margin-bottom: 0;
@@ -579,14 +582,38 @@ footer .active {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .hero__overlay {
     text-align: center;
     position: absolute;
-    height: 0px;
     z-index: 0;
-    width: 70%;
+    width: calc(100% - 2.25rem);
+    height: -moz-fit-content;
+    height: fit-content;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid red;
+  }
+  .hero__overlay .hero__overlay--child {
+    border: 2px solid blue;
+    width: 70%;
+    margin: 0 auto;
+  }
+  #hero__overlay--button {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-home .home-about {
+    display: flex;
+  }
+  .page-home .home-about__right {
+    width: 50%;
+    border: 1px solid red;
+  }
+  .page-home .home-about__left {
+    width: 50%;
+    border: 1px solid blue;
   }
 }
 .subhero {
