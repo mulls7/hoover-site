@@ -28,7 +28,10 @@ $color-yellow-200: rgba(255,225,189,1);
 }
 
 /* Center body and fix to minimum width */
-
+.container {
+  max-width: 75em;
+  margin: 0 auto;
+}
 
 body {
   overflow-x: hidden;

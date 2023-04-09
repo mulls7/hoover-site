@@ -70,7 +70,6 @@
       }
     } 
   }
-
   #hero__overlay--button{
     text-align: center;
     margin: 0 auto;
@@ -79,18 +78,27 @@
 }
 
 @media screen and (min-width: 768px) {
- .page-home {
-  .home-about {
-    display: flex;
-    &__right {
-      width: 50%;
-      border: 1px solid red;
-    }
-    &__left {
-      width: 50%;
-      border: 1px solid blue;
-    }
-  }
- }
+  .page-home {
+    .home-about {
+      display: flex;
+      &__right {
+        width: 60%;
+          &--content {
+            width: 60%;
+          }
+        }
 
+        &__left {
+          width: 40%;
+          text-align: right;
+        }
+      }
+    }
+    
+    .home-latest-projects__pics {
+      border: 1px solid red;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1rem;
+    }
 }

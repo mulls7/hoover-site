@@ -133,6 +133,11 @@ table {
 }
 
 /* Center body and fix to minimum width */
+.container {
+  max-width: 75em;
+  margin: 0 auto;
+}
+
 body {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -608,12 +613,20 @@ footer .active {
     display: flex;
   }
   .page-home .home-about__right {
-    width: 50%;
-    border: 1px solid red;
+    width: 60%;
+  }
+  .page-home .home-about__right--content {
+    width: 60%;
   }
   .page-home .home-about__left {
-    width: 50%;
-    border: 1px solid blue;
+    width: 40%;
+    text-align: right;
+  }
+  .home-latest-projects__pics {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
   }
 }
 .subhero {
