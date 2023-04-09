@@ -611,22 +611,38 @@ footer .active {
 @media screen and (min-width: 768px) {
   .page-home .home-about {
     display: flex;
+    gap: 1rem;
   }
   .page-home .home-about__right {
     width: 60%;
   }
   .page-home .home-about__right--content {
-    width: 60%;
+    width: 70%;
   }
   .page-home .home-about__left {
     width: 40%;
     text-align: right;
   }
-  .home-latest-projects__pics {
+  .page-home #medallion {
+    width: 50%;
+    margin-top: -8px;
+  }
+  .page-home .home-latest-projects__pics {
     border: 1px solid red;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
+  }
+  .page-home .home-latest-projects__pics img {
+    margin: 0rem;
+  }
+  .page-home .home-latest-projects__pics--left {
+    border: 1px solid blue;
+    grid-template-rows: 1fr;
+  }
+  .page-home .home-latest-projects__pics--right {
+    border: 1px solid green;
+    grid-template-rows: 1fr;
   }
 }
 .subhero {

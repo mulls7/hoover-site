@@ -32,6 +32,7 @@
     width: 33%;
   }
 
+
   #home-latest-projects--button-top {
     display: none;
   }
@@ -81,24 +82,47 @@
   .page-home {
     .home-about {
       display: flex;
+      gap: 1rem;
       &__right {
         width: 60%;
-          &--content {
-            width: 60%;
-          }
-        }
-
-        &__left {
-          width: 40%;
-          text-align: right;
+        // border: 1px solid blue;
+        &--content {
+          width: 70%;
+          // border: 1px solid red;
         }
       }
+
+      &__left {
+        width: 40%;
+        text-align: right;
+        // border: 1px solid red;
+        
+      }
     }
-    
+    #medallion {
+      width: 50%;
+      margin-top: -8px;
+    }
     .home-latest-projects__pics {
       border: 1px solid red;
       display: grid;
       grid-template-columns: 2fr 1fr;
+     
       gap: 1rem;
+      img {
+      margin: 0rem;
+     
+      }
+      &--left {
+        border: 1px solid blue;
+        grid-template-rows: 1fr;
+
+      }
+      &--right {
+        border: 1px solid green;
+        grid-template-rows: 1fr;
+
+      }
     }
+  }
 }
