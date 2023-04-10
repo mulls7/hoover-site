@@ -136,6 +136,13 @@ table {
 .container {
   max-width: 75em;
   margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.p-125 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 body {
@@ -147,8 +154,6 @@ body {
 main {
   min-width: 318px;
   box-sizing: border-box;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
   margin-left: auto;
   overflow: hidden;
 }
@@ -471,6 +476,7 @@ footer .footer__social ul {
   width: 70%;
   margin: 0 auto;
   padding: 0;
+  max-width: 20em;
 }
 footer .footer__social ul li {
   margin: 0;
@@ -539,6 +545,23 @@ footer .active {
   font-weight: 700;
 }
 
+@media screen and (min-width: 780px) {
+  footer .pages__list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  footer .footer__flex {
+    display: flex;
+  }
+  footer .footer__social, footer .footer__address, footer .footer__contact, footer .footer__copyright {
+    width: 50%;
+    height: 102px;
+  }
+  footer .footer__copyright p {
+    padding: 1rem;
+  }
+}
 .hero {
   position: relative;
   margin-bottom: 4rem;
@@ -596,12 +619,15 @@ footer .active {
     height: -moz-fit-content;
     height: fit-content;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-    border: 2px solid red;
   }
   .hero__overlay .hero__overlay--child {
-    border: 2px solid blue;
-    width: 70%;
+    width: clamp(50px, 90vw, 750px);
     margin: 0 auto;
+    font-size: clamp(2rem, 0vw, 4rem);
+  }
+  .hero__overlay h2 {
+    font-size: clamp(2.5rem, 5vw, 3.2rem);
+    line-height: clamp(3rem, 5vw, 4rem);
   }
   #hero__overlay--button {
     text-align: center;
@@ -609,7 +635,12 @@ footer .active {
   }
 }
 @media screen and (min-width: 768px) {
+  .hero__overlay {
+    transform: translate(1rem, 13rem);
+  }
   .page-home .home-about {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
     display: flex;
     gap: 1rem;
   }
@@ -628,21 +659,40 @@ footer .active {
     margin-top: -8px;
   }
   .page-home .home-latest-projects__pics {
-    border: 1px solid red;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
   }
   .page-home .home-latest-projects__pics img {
     margin: 0rem;
+    height: 100%;
   }
   .page-home .home-latest-projects__pics--left {
-    border: 1px solid blue;
-    grid-template-rows: 1fr;
+    grid-column: 1/3;
+    grid-row: 1/3;
   }
   .page-home .home-latest-projects__pics--right {
-    border: 1px solid green;
-    grid-template-rows: 1fr;
+    grid-column: 3/3;
+    grid-row: 1/2;
+  }
+  .page-home .home-latest-projects__pics--right2 {
+    grid-column: 3/3;
+    grid-row: 2/3;
+  }
+  .page-home .home-latest-projects__pics--right2:first-child {
+    margin-bottom: 1rem;
+  }
+  .page-home #home-latest-projects--button-bottom {
+    display: none;
+  }
+  .page-home #home-latest-projects--button-top {
+    display: block;
+  }
+  .page-home .home-latest-projects__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }
 .subhero {
@@ -692,12 +742,13 @@ footer .active {
   width: 100%;
   margin-top: 4rem;
   margin-bottom: 2rem;
-  padding: 2rem 1.25rem;
+  padding: 2rem 0rem;
 }
 .contact .contact-form {
   background-color: #fff;
   padding: 1.25rem;
   width: 100%;
+  max-width: 500px;
   border: none;
   border-radius: 15px;
   margin-top: 2rem;
@@ -758,6 +809,18 @@ footer .active {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .contact {
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+  .contact .container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    align-items: center;
+  }
+}
 .page-services .services__services ul {
   list-style-type: none;
   margin: 0;

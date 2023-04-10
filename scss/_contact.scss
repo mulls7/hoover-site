@@ -4,12 +4,13 @@
     width: 100%;
     margin-top: 4rem;
     margin-bottom: 2rem;
-    padding: 2rem 1.25rem;
+    padding: 2rem 0rem;
 
     .contact-form {
       background-color: #fff;
       padding: 1.25rem;
       width: 100%;
+      max-width: 500px;
       border: none;
       border-radius: 15px;
       margin-top: 2rem;
@@ -64,5 +65,22 @@
       padding: 0;
       width: 100%;
     }
+
+  }
+
+  @media screen and (min-width: 768px) {
+
+    .contact {
+      padding: 0;
+      padding-bottom: 2rem;
+      .container {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+        align-items: center;
+        // border: 1px solid red;
+      }
+    }
+    
 
   }

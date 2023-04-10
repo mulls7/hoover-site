@@ -28,12 +28,14 @@ footer{
   .footer__social {
     background-color: $color-green-600;
     padding: 2rem;
+    
     ul {
       display: flex;
       justify-content: space-between;
       width: 70%;
       margin: 0 auto;
       padding: 0;
+      max-width: 20em;
       li {
         margin: 0;
         padding: 0;
@@ -101,4 +103,27 @@ footer{
     font-weight: 700;
   }
 
+}
+
+@media screen and (min-width: 780px) {
+  footer {
+    .pages__list {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .footer__flex {
+      display: flex;
+      
+    }
+    .footer__social, .footer__address, .footer__contact, .footer__copyright {
+      width: 50%;
+      height: 102px;
+    }
+    .footer__copyright {
+      p{
+        padding: 1rem;
+      }
+    }
+  }
 }

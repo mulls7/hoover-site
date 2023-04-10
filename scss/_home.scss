@@ -11,8 +11,10 @@
     height: 0px;
     z-index: 0;
     width: 70%;
+
     transform: translate(1rem, 10rem);
     @include text-shadow();
+    
   }
 
   &__image {
@@ -61,13 +63,20 @@
       z-index: 0;
       width: calc(100% - 2.25rem);
       height: fit-content;
-      @include text-shadow();
-      border: 2px solid red;
-      .hero__overlay--child {
-        border: 2px solid blue;
-        width: 70%;
-        margin: 0 auto;
       
+
+      @include text-shadow();
+      // border: 2px solid red;
+      .hero__overlay--child {
+        // border: 2px solid blue;
+        width: clamp(50px, 90vw, 750px);
+        margin: 0 auto;
+        font-size: clamp(2rem, 0vw, 4rem);
+      
+      }
+      h2 {
+        font-size: clamp(2.5rem, 5vw, 3.2rem);
+        line-height: clamp(3rem, 5vw, 4rem);
       }
     } 
   }
@@ -79,8 +88,16 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero{
+    &__overlay {
+      transform: translate(1rem, 13rem);
+    }
+  }
   .page-home {
+    
     .home-about {
+      margin-top: 2rem;
+      margin-bottom: 6rem;
       display: flex;
       gap: 1rem;
       &__right {
@@ -104,25 +121,48 @@
       margin-top: -8px;
     }
     .home-latest-projects__pics {
-      border: 1px solid red;
+      // border: 1px solid red;
       display: grid;
-      grid-template-columns: 2fr 1fr;
-     
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
       gap: 1rem;
       img {
-      margin: 0rem;
-     
+        margin: 0rem;
+        height: 100%;
       }
       &--left {
-        border: 1px solid blue;
-        grid-template-rows: 1fr;
-
+        // border: 1px solid blue;
+        grid-column: 1/3;
+        grid-row: 1/3;
       }
       &--right {
-        border: 1px solid green;
-        grid-template-rows: 1fr;
+        // border: 1px solid green;
+        grid-column: 3/3;
+        grid-row: 1/2;
+        
+
+      }
+      &--right2 {
+        // border: 1px solid green;
+        grid-column: 3/3;
+        grid-row: 2/3;
+        &:first-child {
+          margin-bottom: 1rem;
+        }
 
       }
     }
+    #home-latest-projects--button-bottom{
+      display: none;
+    }
+    #home-latest-projects--button-top{
+      display: block;
+    }
+    .home-latest-projects__head{
+      display: flex;
+      justify-content: space-between;
+      align-items:flex-end;
+    }
   }
+  
 }
