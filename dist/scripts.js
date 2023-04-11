@@ -40,37 +40,40 @@ console.log("he")
   */
  gsap.registerPlugin(ScrollTrigger);
  gsap.from('.scroll', {
-  y: 100,
+  y: 50,
   opacity: 0,
-  start: "top center",
   duration: 2,
   ease: 'power4',
   scrollTrigger: {
     trigger: '.scroll',
-    markers: true,
+    // markers: true,
+    start: "top 85%"
+
   }
  })
 
  gsap.from('.scroll2', {
   y: 100,
   opacity: 0,
-  start: 'top center',
   duration: 2,
   ease: 'power4',
   scrollTrigger: {
     trigger: '.scroll2',
-    markers: true,
+    // markers: true,
+    start: "top 85%"
+
   }
  })
 
  gsap.from('.scroll3', {
-  x: -100,
-  start: 'top center',
+  x: -500,
+  opacity: 0,
   duration: 2,
   ease: 'power4',
   scrollTrigger: {
     trigger: '.scroll3',
-    markers: true
-    
+    // markers: true,
+    start: "top 85%"
+
   }
  })
