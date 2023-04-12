@@ -140,6 +140,12 @@ table {
   padding-right: 1.25rem;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 .p-125 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -821,6 +827,10 @@ footer .active {
     align-items: center;
   }
 }
+.page-services .services__services {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 .page-services .services__services ul {
   list-style-type: none;
   margin: 0;
@@ -882,4 +892,37 @@ footer .active {
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.services__intro {
+  width: 400px;
+  margin-bottom: 4rem;
+}
+
+.service {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+  .services__intro {
+    text-align: center;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+  .services .service {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
 }/*# sourceMappingURL=main.css.map */

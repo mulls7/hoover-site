@@ -2,6 +2,8 @@
 .page-services {
    
   .services__services {
+    display: grid;
+    grid-template-columns: 1fr;
     ul {
       list-style-type: none;
       margin: 0;
@@ -56,5 +58,41 @@
     color: #fff;
 
     @include text-style-heading-2;
+  }
+}
+.services__intro {
+  width: 400px;
+  margin-bottom: 4rem;
+}
+
+.service {
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width: 500px) {
+  
+  .services__intro {
+    text-align: center;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+
+    .service {
+      width: fit-content;
+      padding: 1rem;
+    }
+
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
 }
