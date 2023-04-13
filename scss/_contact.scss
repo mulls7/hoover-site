@@ -6,11 +6,28 @@
     margin-bottom: 2rem;
     padding: 2rem 0rem;
 
+    .container2 {
+      width: 100%;
+      padding-inline: auto;
+    }
+
+    
+
+    h2 {
+      margin-bottom: 3rem;
+    }
+
+    h3 {
+      font-weight: 200;
+      font-size: 1rem;
+      margin-bottom: 0rem;
+    }
+
+
     .contact-form {
       background-color: #fff;
       padding: 1.25rem;
       width: 100%;
-      max-width: 500px;
       border: none;
       border-radius: 15px;
       margin-top: 2rem;
@@ -73,12 +90,30 @@
     .contact {
       padding: 0;
       padding-bottom: 2rem;
-      .container {
+      height: 400px;
+      margin-top: 200px;
+      margin-bottom: 150px;
+
+      .contact-form {
+        margin-top: 0;
+        max-width: 400px;
+
+      }
+
+      .container2 {
+        margin-top: -60px;
         display: flex;
         flex-direction: row-reverse;
-        gap: 2rem;
+        gap: 3rem;
         align-items: center;
+        justify-content:left;
         // border: 1px solid red;
+        position: absolute;
+        padding-top: 0;
+        width: 92%;
+      }
+      .contact-desc {
+        max-width: 450px;
       }
     }
     

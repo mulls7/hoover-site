@@ -323,9 +323,13 @@ header {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  max-width: 90em;
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
+  margin-inline: auto;
 }
 header h1 {
   margin: 0;
@@ -750,11 +754,22 @@ footer .active {
   margin-bottom: 2rem;
   padding: 2rem 0rem;
 }
+.contact .container2 {
+  width: 100%;
+  padding-inline: auto;
+}
+.contact h2 {
+  margin-bottom: 3rem;
+}
+.contact h3 {
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 0rem;
+}
 .contact .contact-form {
   background-color: #fff;
   padding: 1.25rem;
   width: 100%;
-  max-width: 500px;
   border: none;
   border-radius: 15px;
   margin-top: 2rem;
@@ -819,12 +834,27 @@ footer .active {
   .contact {
     padding: 0;
     padding-bottom: 2rem;
+    height: 400px;
+    margin-top: 200px;
+    margin-bottom: 150px;
   }
-  .contact .container {
+  .contact .contact-form {
+    margin-top: 0;
+    max-width: 400px;
+  }
+  .contact .container2 {
+    margin-top: -60px;
     display: flex;
     flex-direction: row-reverse;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
+    justify-content: left;
+    position: absolute;
+    padding-top: 0;
+    width: 92%;
+  }
+  .contact .contact-desc {
+    max-width: 450px;
   }
 }
 .page-services .services__services {
@@ -874,6 +904,7 @@ footer .active {
   position: relative;
   text-align: center;
   margin: 4rem 1.25rem;
+  max-width: 500px;
 }
 .gallery-button img {
   width: 100%;
