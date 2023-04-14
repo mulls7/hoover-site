@@ -80,3 +80,9 @@ console.log("he")
 
   }
  })
+
+ gsap.from('main', {
+  scale: .95,
+  duration: .8,
+  ease: true
+ })

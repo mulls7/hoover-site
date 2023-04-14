@@ -7,7 +7,6 @@
     }
   }
   #about-content {
-    max-width: 600px;
     div {
       margin-bottom: 2rem;
     }
@@ -22,8 +21,6 @@
 
   #about-content {
     margin-inline: auto;
-    @include drop-shadow;
-    padding: 3rem;
   }
 
   #hoover-pic {

@@ -141,6 +141,9 @@ table {
 }
 
 @media screen and (min-width: 768px) {
+  html {
+    font-size: large;
+  }
   .container {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -721,9 +724,10 @@ footer .active {
 .subhero__overlay {
   text-align: left;
   position: absolute;
-  height: 0px;
+  height: -moz-fit-content;
+  height: fit-content;
   z-index: 0;
-  width: 70%;
+  width: 75em;
   transform: translate(1.25rem, 16rem);
 }
 .subhero__overlay h2 {
@@ -750,9 +754,6 @@ footer .active {
   text-align: right;
   font-style: italic;
 }
-.page-about #about-content {
-  max-width: 600px;
-}
 .page-about #about-content div {
   margin-bottom: 2rem;
 }
@@ -763,8 +764,6 @@ footer .active {
 @media screen and (min-width: 768px) {
   #about-content {
     margin-inline: auto;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
-    padding: 3rem;
   }
   #hoover-pic {
     order: -1;
@@ -776,7 +775,7 @@ footer .active {
 
 .gallery-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(307px, 1fr));
   grid-template-rows: auto;
   -moz-column-gap: 1rem;
        column-gap: 1rem;

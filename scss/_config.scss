@@ -38,7 +38,7 @@ $color-yellow-200: rgba(255,225,189,1);
 @media screen and (min-width: 768px) {
 
   html {
-    // font-size: large;
+   font-size: large;   
   }
 
   .container {
@@ -169,7 +169,6 @@ body {
 @mixin text-shadow() {
   text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
-
 
 
 @mixin link-hover {

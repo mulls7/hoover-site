@@ -5,9 +5,9 @@
   &__overlay {
     text-align: left;
     position: absolute;
-    height: 0px;
+    height:fit-content;
     z-index: 0;
-    width: 70%;
+    width: 75em;
     transform: translate(1.25rem, 16rem);
     h2 {
       color: #fff;
