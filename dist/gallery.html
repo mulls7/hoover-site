@@ -45,13 +45,13 @@
     <img src="images/subhero-gallery.png" alt="mowed lawn" class="subhero__image">
   </div>
   <main class="page-gallery">
-    <section>
+    <section class="container">
       <div>
         <h3>Honesty is the Best Policy</h3>
         <p>Here’s some of our latest work.</p>
       </div>
     </section>
-    <section class="gallery-list">
+    <section class="gallery-list container">
       <div class="gallery-list__pic">
         <img src="images/gallery-1.png" alt="">
       </div>
@@ -103,37 +103,47 @@
     </div>
     <div class="footer__nav">
       <ul class="pages__list">
-        <li><a href="index.html" class="page-link white">Home</a></li>
+        <li><a href="index.html" class="page-link white active">Home</a></li>
         <li><a href="services.html" class="page-link white">Services</a></li>
-        <li><a href="gallery.html" class="page-link white active">Gallery</a></li>
+        <li><a href="gallery.html" class="page-link white">Gallery</a></li>
         <li><a href="about.html" class="page-link white">About</a></li>
         <li><a href="contact.html" class="page-link white">Contact</a></li>
       </ul>
     </div>
-    <div class="footer__social">
-      <ul class="footer__social-logos">
-        <li><a href=".html" class=""><img src="images/logo-facebook.svg" alt="facebook logo"></a></li>
-        <li><a href=".html" class=""><img src="images/logo-instagram.svg" alt="instagram logo"></a></li>
-        <li><a href=".html" class=""><img src="images/logo-twitter.svg" alt="twitter logo"></a></li>
+    <div class="footer__flex">
+      <div class="footer__social">
+        <ul class="footer__social-logos">
+          <li><a href=".html" class=""><img src="images/logo-facebook.svg" alt="facebook logo"></a></li>
+          <li><a href=".html" class=""><img src="images/logo-instagram.svg" alt="instagram logo"></a></li>
+          <li><a href=".html" class=""><img src="images/logo-twitter.svg" alt="twitter logo"></a></li>
+        </ul>
+      </div>
+      <div class="footer__address">
+        <a href="https://goo.gl/maps/agJ3N5SZzaj5foQh9" target="_blank">
+          <img src="images/logo-home.svg"> 51 Lancaster Street. Hershey, PA 55555
+        </a>
+      </div>
     </div>
-    <div class="footer__address">
-      <a href="https://goo.gl/maps/agJ3N5SZzaj5foQh9" target="_blank">
-        <img src="images/logo-home.svg"> 51 Lancaster Street. Hershey, PA 55555
-      </a>
-    </div>
-    <div class="footer__contact">
-      <a href="tel:860-549-2073">
-        <img src="images/logo-phone.svg">
-        (860) 549-2073
-      </a>  
-      <a href="mailto: LukeMoffittJr@gmail.com">
-        <img src="images/logo-mail.svg"> Jack@hbps.com
-      </a>
-    </div>
-    <div class="footer__copyright">
-      <p> &#169 Copyright 2023 Luke Moffitt</p>
+    <div class="footer__flex">
+      <div class="footer__contact">
+        <a href="tel:860-549-2073">
+          <img src="images/logo-phone.svg">
+          (860) 549-2073
+        </a>  
+        <a href="mailto: LukeMoffittJr@gmail.com">
+          <img src="images/logo-mail.svg"> Jack@hbps.com
+        </a>
+      </div>
+      <div class="footer__copyright">
+        <p> &#169 Copyright 2023 Luke Moffitt</p>
+      </div>
     </div>
   </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   <script src="scripts.js"></script>
+  
 </body>
 </html>

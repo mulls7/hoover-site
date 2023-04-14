@@ -36,9 +36,21 @@ $color-yellow-200: rgba(255,225,189,1);
 }
 
 @media screen and (min-width: 768px) {
+
+  html {
+    // font-size: large;
+  }
+
   .container {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .full-width-yellow {
+    text-align: center;
+    .button {
+      margin-inline: auto;
+    }
   }
 }
 
@@ -150,6 +162,10 @@ body {
 @mixin drop-shadow2() {
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
+
+@mixin drop-shadow3() {
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
 @mixin text-shadow() {
   text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
@@ -193,3 +209,4 @@ body {
     left: 0;
   }
 }
+

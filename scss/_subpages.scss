@@ -25,3 +25,11 @@
     z-index: -1;
   }
 }
+@media screen and (min-width: 768px) {
+  .subhero {
+    
+    &__overlay {
+      transform: translate(2rem, 16rem);
+    }
+  }
+}

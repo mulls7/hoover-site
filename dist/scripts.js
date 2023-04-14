@@ -38,6 +38,9 @@ console.log("he")
     });
   });
   */
+
+  
+//ScrollTrigger for animations
  gsap.registerPlugin(ScrollTrigger);
  gsap.from('.scroll', {
   y: 50,
