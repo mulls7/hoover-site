@@ -1,5 +1,6 @@
 
 .page-about {
+  
   figure {
     figcaption {
       text-align: right;
@@ -7,6 +8,7 @@
     }
   }
   #about-content {
+    
     div {
       margin-bottom: 2rem;
     }
@@ -17,14 +19,44 @@
   }
 }
 
+#hoover-pic {
+  display: none;
+}
+#hoover-pic1 {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
 
-  #about-content {
+  .page-about {
     margin-inline: auto;
+    display: flex;
+    gap: 2rem;
+    figcaption {
+      font-size: .8rem;
+    }
+      
   }
 
-  #hoover-pic {
-    // max-width: 500px;
-    order: -1;
+  #hoover-pic1 {
+    display: none;
   }
+  
+  #hoover-pic {
+    display: block;
+    width: 50%;
+  }
+  #about-content{
+    width: 50%;
+    max-width: 500px;
+    margin-top: 50px;
+  }
+ 
+
+    #page-about__gal-but {
+      width: 50%;
+    
+  }
+    
+
 }

@@ -761,12 +761,37 @@ footer .active {
   margin: 0;
 }
 
+#hoover-pic {
+  display: none;
+}
+
+#hoover-pic1 {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
-  #about-content {
+  .page-about {
     margin-inline: auto;
+    display: flex;
+    gap: 2rem;
+  }
+  .page-about figcaption {
+    font-size: 0.8rem;
+  }
+  #hoover-pic1 {
+    display: none;
   }
   #hoover-pic {
-    order: -1;
+    display: block;
+    width: 50%;
+  }
+  #about-content {
+    width: 50%;
+    max-width: 500px;
+    margin-top: 50px;
+  }
+  #page-about__gal-but {
+    width: 50%;
   }
 }
 .page-gallery .gallery-list__pic {
