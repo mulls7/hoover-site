@@ -1,12 +1,13 @@
 .subhero {
   position: relative;
   margin-bottom: 4rem;
+  overflow: hidden;
 
   &__overlay {
     text-align: left;
     position: absolute;
     height:fit-content;
-    z-index: 0;
+    z-index: 1;
     width: 75em;
     transform: translate(1.25rem, 16rem);
     h2 {

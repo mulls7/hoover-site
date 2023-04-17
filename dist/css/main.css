@@ -587,12 +587,13 @@ footer .active {
 .hero {
   position: relative;
   margin-bottom: 4rem;
+  overflow: hidden;
 }
 .hero__overlay {
   text-align: left;
   position: absolute;
   height: 0px;
-  z-index: 0;
+  z-index: 1;
   width: 70%;
   transform: translate(1rem, 10rem);
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
@@ -636,7 +637,6 @@ footer .active {
   .hero__overlay {
     text-align: center;
     position: absolute;
-    z-index: 0;
     width: calc(100% - 2.25rem);
     height: -moz-fit-content;
     height: fit-content;
@@ -720,13 +720,14 @@ footer .active {
 .subhero {
   position: relative;
   margin-bottom: 4rem;
+  overflow: hidden;
 }
 .subhero__overlay {
   text-align: left;
   position: absolute;
   height: -moz-fit-content;
   height: fit-content;
-  z-index: 0;
+  z-index: 1;
   width: 75em;
   transform: translate(1.25rem, 16rem);
 }

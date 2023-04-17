@@ -39,6 +39,8 @@ console.log("he")
   });
   */
 
+
+
   
 //ScrollTrigger for animations
  gsap.registerPlugin(ScrollTrigger);
@@ -53,7 +55,7 @@ console.log("he")
     start: "top 85%"
 
   }
- })
+ });
 
  gsap.from('.scroll2', {
   y: 100,
@@ -66,7 +68,7 @@ console.log("he")
     start: "top 85%"
 
   }
- })
+ });
 
  gsap.from('.scroll3', {
   x: -500,
@@ -79,10 +81,46 @@ console.log("he")
     start: "top 85%"
 
   }
- })
+ });
 
  gsap.from('main', {
   scale: .95,
   duration: .8,
   ease: true
- })
+ });
+
+//Parallax
+gsap.to(".parallax", {
+  y: -100,
+  scale: 1.1,
+});
+
+gsap.to(".parallax", {
+  yPercent: 25,
+  ease: "none",
+  
+  scrollTrigger: {
+    trigger: ".parallax-section",
+    // start: "top bottom", // the default values
+    // end: "bottom top",
+    scrub: true
+  } , 
+});
+
+//Sub-hero Parallax
+gsap.to(".sub-parallax", {
+  y: -70,
+  scale: 1.1,
+});
+
+gsap.to(".sub-parallax", {
+  yPercent: 25,
+  ease: "none",
+  
+  scrollTrigger: {
+    trigger: ".sub-parallax-section",
+    // start: "top bottom", // the default values
+    // end: "bottom top",
+    scrub: true
+  } , 
+});
