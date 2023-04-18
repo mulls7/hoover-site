@@ -140,6 +140,11 @@ table {
   padding-right: 1.25rem;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 38em;
+  }
+}
 @media screen and (min-width: 768px) {
   html {
     font-size: large;
