@@ -166,9 +166,9 @@ table {
 }
 
 body {
+  position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
-  position: relative;
 }
 
 main {
@@ -180,6 +180,7 @@ main {
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -408,7 +409,7 @@ header nav li:first-child {
 }
 
 .lock-scroll {
-  overflow: hidden;
+  position: fixed;
 }
 
 @media screen and (max-width: 768px) {

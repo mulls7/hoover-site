@@ -67,9 +67,9 @@ $color-yellow-200: rgba(255,225,189,1);
 }
 
 body {
+  position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
-  position: relative;
 }
 
 main {
@@ -83,6 +83,8 @@ main {
 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
+
 }
 *, *:before, *:after {
   box-sizing: inherit;

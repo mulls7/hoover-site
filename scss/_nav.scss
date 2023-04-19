@@ -121,7 +121,7 @@ header {
 // }
 
 .lock-scroll {
-  overflow: hidden;
+  position: fixed;
 }
 
 @media screen and (max-width: 768px) {
