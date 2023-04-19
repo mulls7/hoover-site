@@ -21,11 +21,16 @@ header {
     margin: 0;
     padding: 0;
     line-height: 0;
+
     
     svg {
       filter: drop-shadow(1px 1px 12px rgb(0 0 0 / 0.7));
-      
+
     }
+  }
+
+  #hoover-logo-white {
+    @include hover-scale;
   }
  
   .hamburger {
@@ -65,6 +70,7 @@ header {
       margin: 0 auto;
       margin-left: 3rem;
       list-style: none;
+      @include hover-scale;
   
       .page-link{
         position: relative;
@@ -75,7 +81,7 @@ header {
       }
 
       .active {
-        font-weight: 700;
+        font-weight: $weight-black;
         color: $color-yellow-primary;
         // border-bottom: 2px solid $color-yellow-primary;
         }

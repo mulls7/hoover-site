@@ -107,6 +107,11 @@ footer{
 
 @media screen and (min-width: 780px) {
   footer {
+
+    .footer__address a, .footer__contact a {
+      font-size: .8rem;
+    }
+    
     .pages__list {
       display: flex;
       justify-content: center;
@@ -119,10 +124,13 @@ footer{
     .footer__social, .footer__address, .footer__contact, .footer__copyright {
       width: 50%;
       height: 102px;
+      
     }
     .footer__copyright {
       p{
         padding: 1rem;
+        font-size: .8rem;
+
       }
     }
   }

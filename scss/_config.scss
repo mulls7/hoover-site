@@ -113,7 +113,7 @@ img {
     @include text-style-button();
     margin: 0;
     margin-bottom: 1rem;
-    transition: all .2s ease;
+    transition: all .3s ease;
     &:hover {
       @include button-hover-yellow();
       color: $color-body;
@@ -134,7 +134,7 @@ img {
     @include text-style-button();
     margin: 0;
     margin-bottom: 1rem;
-    transition: all .2s ease;
+    transition: all .3s ease;
     
     &:hover {
       @include button-hover-green();
@@ -142,7 +142,12 @@ img {
     }
   }
 
-
+  @mixin hover-scale {
+    transition: all .3s ease;
+    &:hover {
+      scale: 1.06;
+    }
+  }
 
 a,
 body {
@@ -178,43 +183,3 @@ body {
 @mixin text-shadow() {
   text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
-
-
-@mixin link-hover {
-  &{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    padding-bottom: .4rem;
-    transition: all .3s;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: -100%;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background-color: white;
-    transition: all .3s;
-    color: #fff;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    left: 100%;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background-color: white;
-    transition: all .5s;
-    color: #fff;
-  }
-
-  &:hover:before, &:hover:after {
-    left: 0;
-  }
-}
-

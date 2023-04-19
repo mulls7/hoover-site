@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;900&family=Roboto:ital,wght@0,900;1,900&display=swap");
 html,
 body,
 div,
@@ -210,7 +211,7 @@ img {
   letter-spacing: 2.5px;
   margin: 0;
   margin-bottom: 1rem;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 .button:hover, #button:hover {
   background-color: rgb(255, 180, 91);
@@ -239,7 +240,7 @@ img {
   letter-spacing: 2.5px;
   margin: 0;
   margin-bottom: 1rem;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 .button-yellow:hover {
   background-color: rgb(78, 92, 60);
@@ -354,6 +355,12 @@ header h1 {
 header h1 svg {
   filter: drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.7));
 }
+header #hoover-logo-white {
+  transition: all 0.3s ease;
+}
+header #hoover-logo-white:hover {
+  scale: 1.06;
+}
 header .hamburger {
   display: none;
   transition: 0.1s ease;
@@ -385,6 +392,10 @@ header nav li {
   margin: 0 auto;
   margin-left: 3rem;
   list-style: none;
+  transition: all 0.3s ease;
+}
+header nav li:hover {
+  scale: 1.06;
 }
 header nav li .page-link {
   position: relative;
@@ -393,7 +404,7 @@ header nav li .page-link {
   transition: all 0.3s;
   font-size: 1.125rem;
   font-family: "Roboto";
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   line-height: 30px;
   letter-spacing: 2.5px;
@@ -401,7 +412,7 @@ header nav li .page-link {
   text-transform: uppercase;
 }
 header nav li .active {
-  font-weight: 700;
+  font-weight: 900;
   color: rgb(255, 180, 91);
 }
 header nav li:first-child {
@@ -561,7 +572,7 @@ footer .page-link {
   transition: all 0.3s;
   font-size: 1.125rem;
   font-family: "Roboto";
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   line-height: 30px;
   letter-spacing: 2.5px;
@@ -574,6 +585,9 @@ footer .active {
 }
 
 @media screen and (min-width: 780px) {
+  footer .footer__address a, footer .footer__contact a {
+    font-size: 0.8rem;
+  }
   footer .pages__list {
     display: flex;
     justify-content: center;
@@ -588,6 +602,7 @@ footer .active {
   }
   footer .footer__copyright p {
     padding: 1rem;
+    font-size: 0.8rem;
   }
 }
 .hero {
