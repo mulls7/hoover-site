@@ -586,7 +586,7 @@ footer .active {
 
 @media screen and (min-width: 780px) {
   footer .footer__address a, footer .footer__contact a {
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 1.8vw, 1rem);
   }
   footer .pages__list {
     display: flex;
@@ -602,7 +602,7 @@ footer .active {
   }
   footer .footer__copyright p {
     padding: 1rem;
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 1.8vw, 1rem);
   }
 }
 .hero {
@@ -757,6 +757,7 @@ footer .active {
 }
 .subhero__overlay h2 {
   color: #fff;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 .subhero__image {
   display: block;

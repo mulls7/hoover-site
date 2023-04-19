@@ -109,7 +109,7 @@ footer{
   footer {
 
     .footer__address a, .footer__contact a {
-      font-size: .8rem;
+      font-size: clamp(.8rem, 1.8vw, 1rem);
     }
     
     .pages__list {
@@ -129,7 +129,7 @@ footer{
     .footer__copyright {
       p{
         padding: 1rem;
-        font-size: .8rem;
+        font-size: clamp(.8rem, 1.8vw, 1rem);
 
       }
     }
