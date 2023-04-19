@@ -36,7 +36,10 @@ header {
   .hamburger {
     display: none;
     transition: .1s ease;
-    
+    @include hover-scale2;
+    &:hover {
+      cursor: pointer;
+    }
     .bar {
       display: block;
       width: 21px;
@@ -46,8 +49,6 @@ header {
       background-color: white;
       transition: .3s all ease;
       @include drop-shadow();
-      
-
     }
   }
 
@@ -70,7 +71,7 @@ header {
       margin: 0 auto;
       margin-left: 3rem;
       list-style: none;
-      @include hover-scale;
+    
   
       .page-link{
         position: relative;
@@ -159,8 +160,8 @@ header {
       right: -100%;
       flex-direction: column;
       background-color: $color-green-primary;
-      width: 50%;
-      text-align: right;
+      width: 66%;
+      text-align: left;
       transition: 0.3s;
       z-index: -1;
       overflow: hidden;
@@ -181,7 +182,7 @@ header {
       top: 0px;
       right: 0px;
       z-index: 0;
-      opacity: .85;
+      opacity: .95;
     }
   }
 }

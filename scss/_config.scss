@@ -147,6 +147,18 @@ img {
     &:hover {
       scale: 1.06;
     }
+    &:active {
+      scale: .9;
+    };
+  }
+  @mixin hover-scale2 {
+    transition: all .3s ease;
+    &:hover {
+      scale: 1.17;
+    }
+    &:active {
+      scale: .9;
+    };
   }
 
 a,

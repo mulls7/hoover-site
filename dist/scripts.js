@@ -124,3 +124,57 @@ gsap.to(".sub-parallax", {
     scrub: true
   } , 
 });
+
+//text appear
+gsap.from(".text-appear1", {
+  y: 50,
+  duration: 1,
+  ease: 'power4',
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".text-appear1",
+    opacity: 1,
+    y: 0,
+    
+    
+    // start: "top bottom", // the default values
+    // end: "bottom top",
+  } , 
+});
+gsap.from(".text-appear2", {
+  y: 50,
+  duration: 1,
+  ease: 'power4',
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".text-appear2",
+    opacity: 1,
+    y: 0,
+    start: "top 85%",
+    end: "bottom top",
+  } , 
+});
+gsap.from(".text-appear3", {
+  y: 50,
+  duration: 1,
+  opacity: 0,
+  ease: 'power4',
+  scrollTrigger: {
+    trigger: ".text-appear3",
+    opacity: 1,
+    y: 0,
+    start: "top 85%",
+  } , 
+});
+gsap.from(".yellow-appear", {
+  x: -10000,
+  duration: 1,
+  opacity: 0,
+  ease: 'power4',
+  scrollTrigger: {
+    trigger: ".yellow-appear",
+    opacity: 1,
+    x: 0,
+    start: "top bottom",
+  } , 
+});

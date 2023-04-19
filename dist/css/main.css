@@ -361,9 +361,22 @@ header #hoover-logo-white {
 header #hoover-logo-white:hover {
   scale: 1.06;
 }
+header #hoover-logo-white:active {
+  scale: 0.9;
+}
 header .hamburger {
   display: none;
   transition: 0.1s ease;
+  transition: all 0.3s ease;
+}
+header .hamburger:hover {
+  scale: 1.17;
+}
+header .hamburger:active {
+  scale: 0.9;
+}
+header .hamburger:hover {
+  cursor: pointer;
 }
 header .hamburger .bar {
   display: block;
@@ -392,10 +405,6 @@ header nav li {
   margin: 0 auto;
   margin-left: 3rem;
   list-style: none;
-  transition: all 0.3s ease;
-}
-header nav li:hover {
-  scale: 1.06;
 }
 header nav li .page-link {
   position: relative;
@@ -444,8 +453,8 @@ header nav li:first-child {
     right: -100%;
     flex-direction: column;
     background-color: rgb(78, 92, 60);
-    width: 50%;
-    text-align: right;
+    width: 66%;
+    text-align: left;
     transition: 0.3s;
     z-index: -1;
     overflow: hidden;
@@ -463,7 +472,7 @@ header nav li:first-child {
     top: 0px;
     right: 0px;
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.95;
   }
 }
 @media screen and (min-width: 768px) {
@@ -486,6 +495,13 @@ footer {
 }
 footer a {
   color: #fff;
+  transition: all 0.3s ease;
+}
+footer a:hover {
+  scale: 1.06;
+}
+footer a:active {
+  scale: 0.9;
 }
 footer ul {
   list-style: none;
@@ -500,6 +516,13 @@ footer .footer__logo {
   margin-bottom: 1rem;
   width: -moz-fit-content;
   width: fit-content;
+  transition: all 0.3s ease;
+}
+footer .footer__logo:hover {
+  scale: 1.06;
+}
+footer .footer__logo:active {
+  scale: 0.9;
 }
 footer .footer__nav {
   background-color: rgb(78, 92, 60);
@@ -524,11 +547,32 @@ footer .footer__social ul li {
 footer .footer__social ul li img {
   margin: 0;
   padding: 0;
+  transition: all 0.3s ease;
+}
+footer .footer__social ul li img:hover {
+  scale: 1.17;
+}
+footer .footer__social ul li img:active {
+  scale: 0.9;
+}
+footer .footer__social ul li svg:hover {
+  fill: #fff;
 }
 footer .footer__address {
   background-color: rgb(47, 55, 36);
   padding: 2rem;
   margin-bottom: -5px;
+}
+footer .footer__address a {
+  display: block;
+  transition: all 0.3s ease;
+  margin-bottom: 0;
+}
+footer .footer__address a:hover {
+  scale: 1.06;
+}
+footer .footer__address a:active {
+  scale: 0.9;
 }
 footer .footer__address img {
   vertical-align: middle;
@@ -540,12 +584,25 @@ footer .footer__contact {
   background-color: rgb(31, 37, 24);
   padding: 2rem;
   margin-bottom: -5px;
+  display: flex;
+  justify-content: center;
 }
 footer .footer__contact img {
   vertical-align: middle;
   position: relative;
   margin-bottom: 5px;
   margin-right: 5px;
+}
+footer .footer__contact a {
+  display: block;
+  transition: all 0.3s ease;
+  margin-bottom: 0;
+}
+footer .footer__contact a:hover {
+  scale: 1.06;
+}
+footer .footer__contact a:active {
+  scale: 0.9;
 }
 footer .footer__contact a:first-child {
   margin-right: 1rem;
@@ -579,9 +636,12 @@ footer .page-link {
   text-decoration: none;
   text-transform: uppercase;
   margin-bottom: 0;
+  opacity: 0.8;
+  font-weight: 400;
 }
 footer .active {
   font-weight: 700;
+  opacity: 1;
 }
 
 @media screen and (min-width: 780px) {
@@ -842,6 +902,9 @@ footer .active {
 .contact .container2 {
   width: 100%;
   padding-inline: auto;
+}
+.contact #button {
+  cursor: pointer;
 }
 .contact h2 {
   margin-bottom: 2.5rem;
