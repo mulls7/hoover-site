@@ -45,7 +45,8 @@ $color-yellow-200: rgba(255,225,189,1);
 
   html {
    font-size: large;  
-   
+   max-width: 90em;
+   margin-inline: auto;
   }
 
   .container {

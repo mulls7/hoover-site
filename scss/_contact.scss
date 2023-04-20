@@ -104,6 +104,7 @@
     .contact-form {
       margin-top: 0;
       max-width: 400px;
+      min-width: 100px;
 
     }
 
@@ -113,7 +114,7 @@
       flex-direction: row-reverse;
       gap: 3rem;
       align-items: center;
-      justify-content:left;
+      justify-content: flex-end;
       // border: 1px solid red;
       position: absolute;
       padding-top: 0;
@@ -121,6 +122,7 @@
     }
     .contact-desc {
       max-width: 500px;
+      min-width: 350px;
     }
   }
   //Contact subpage

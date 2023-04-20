@@ -149,6 +149,8 @@ table {
 @media screen and (min-width: 768px) {
   html {
     font-size: large;
+    max-width: 90em;
+    margin-inline: auto;
   }
   .container {
     padding-left: 2rem;
@@ -487,6 +489,13 @@ header nav li:first-child {
     margin-bottom: 0;
     font-size: 1rem;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  header nav li .page-link:hover {
+    scale: 1.06;
+  }
+  header nav li .page-link:active {
+    scale: 0.9;
   }
 }
 footer {
@@ -995,6 +1004,7 @@ footer .active {
   .contact .contact-form {
     margin-top: 0;
     max-width: 400px;
+    min-width: 100px;
   }
   .contact .container2 {
     margin-top: -60px;
@@ -1002,13 +1012,14 @@ footer .active {
     flex-direction: row-reverse;
     gap: 3rem;
     align-items: center;
-    justify-content: left;
+    justify-content: flex-end;
     position: absolute;
     padding-top: 0;
     width: 92%;
   }
   .contact .contact-desc {
     max-width: 500px;
+    min-width: 350px;
   }
   .page-contact section {
     display: flex;
