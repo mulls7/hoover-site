@@ -1189,4 +1189,7 @@ footer .active {
   .services__intro {
     text-align: center;
   }
+}
+.tns-outer .tns-controls button {
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */
