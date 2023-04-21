@@ -98,6 +98,7 @@ img {
 
 @mixin button-hover-green(){
   background-color: $color-green-primary;
+  
 }
 @mixin button-hover-yellow(){
   background-color: $color-yellow-primary;
@@ -118,6 +119,9 @@ img {
     &:hover {
       @include button-hover-yellow();
       color: $color-body;
+      &:active {
+        scale: .9;
+      };
     }
   }
 
@@ -141,6 +145,9 @@ img {
       @include button-hover-green();
       color: #fff;
     }
+    &:active {
+      scale: .9;
+    };
   }
 
   @mixin hover-scale {

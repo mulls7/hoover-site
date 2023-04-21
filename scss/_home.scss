@@ -4,6 +4,15 @@
   margin-bottom: 4rem;
   overflow: hidden;
 
+  &::after{
+    content:'';
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    display:inline-block;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 0, 0, 0.3)), color-stop(10%,rgba(110, 110, 110, 0.003))); /* Chrome,Safari4+ */
+  }
+
   &__overlay {
     text-align: left;
     position: absolute;
@@ -13,7 +22,9 @@
 
     transform: translate(1rem, 10rem);
     @include text-shadow();
-    
+    #hero__overlay--button {
+      text-shadow: none;
+    }
   }
 
   &__image {
