@@ -999,6 +999,10 @@ footer .active {
 .contact .contact-form input:focus:invalid {
   border: none;
 }
+.contact .contact-form .captcha {
+  width: 304px;
+  height: 78px;
+}
 
 .page-contact .contact-info svg, .page-contact .address svg {
   vertical-align: middle;
@@ -1038,17 +1042,17 @@ footer .active {
   .contact {
     padding: 0;
     padding-bottom: 2rem;
-    height: 400px;
+    height: 500px;
     margin-top: 200px;
     margin-bottom: 150px;
   }
   .contact .contact-form {
     margin-top: 0;
-    max-width: 400px;
-    min-width: 100px;
+    max-width: 450px;
+    min-width: 350px;
   }
   .contact .container2 {
-    margin-top: -60px;
+    margin-top: -73px;
     display: flex;
     flex-direction: row-reverse;
     gap: 3rem;
@@ -1060,7 +1064,10 @@ footer .active {
   }
   .contact .contact-desc {
     max-width: 500px;
-    min-width: 350px;
+    min-width: 300px;
+  }
+  .contact .contact-desc .h2-text-style {
+    font-size: clamp(2rem, 2vw, 4rem);
   }
   .page-contact section {
     display: flex;
