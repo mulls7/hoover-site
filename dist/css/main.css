@@ -1196,9 +1196,11 @@ footer .active {
   width: fit-content;
 }
 .tns-outer .tns-controls button {
+  visibility: hidden;
+  position: relative;
   border: grey solid 0.1px;
   border-radius: 5px;
-  padding: 0.2rem 0.5rem;
+  padding: 0.1rem 0.3rem;
   font-size: 1rem;
   font-family: "Roboto";
   font-weight: 300;
@@ -1207,6 +1209,7 @@ footer .active {
   text-decoration: none;
   text-transform: none;
   margin-bottom: 1rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin: 0.2rem;
@@ -1222,6 +1225,7 @@ footer .active {
   width: 20px;
   border: 1px solid grey;
   margin: 1rem 0.1rem;
+  margin-top: 0.5rem;
   transform: scale(0.5);
 }
 .tns-outer .tns-nav-active {
