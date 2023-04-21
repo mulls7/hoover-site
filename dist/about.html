@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | HBPS</title>
   <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
   <script>
     function lockScroll() {
@@ -76,6 +78,26 @@
       </div>
     </section> 
   </main>
+ <div class="my-slider">
+    <div>
+      <img src="images/gallery-1.png"/>
+    </div>
+    <div>
+      <img src="images/gallery-2.png"/>
+    </div>
+    <div>
+      <img src="images/gallery-3.png"/>
+    </div>
+    <div>
+      <img src="images/gallery-1.png"/>
+    </div>
+    <div>
+      <img src="images/gallery-2.png"/>
+    </div>
+    <div>
+      <img src="images/gallery-3.png"/>
+    </div>
+  </div>
   <section class="contact">
     <div class="container">
       <div class="container2">
@@ -113,8 +135,7 @@
           </fieldset>
         </form>
       </div> 
-      </div>
-        
+    </div>    
   </div>
   </section>
   <footer>
@@ -166,6 +187,40 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   <script src="scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+    <script>
+      var slider = tns({
+        "container": ".my-slider",
+        "items": 2,
+        "slideBy": "page",
+        "mouseDrag": true,
+        "swipeAngle": false,
+        "arrowKeys": true,
+        "speed": 400,
+        "gutter": 10,
+        "autoplay": true,
+        "autoplayHoverPause": true,
+        "autoplayTimeout": 3500,
+        "autoplayText": [
+          "▶",
+          "❚❚"
+        ],
+        "edgePadding": 50,
+        "responsive": {
+          "350": {
+            "items": 1,
+            "edgePadding": 30
+          },
+          "500": {
+            "items": 2
+          },
+          "800": {
+            "items": 3
+          }
+        }
+      })
+    </script>
   
 </body>
 </html>
