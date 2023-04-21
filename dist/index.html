@@ -106,15 +106,18 @@
               </label>
             </br>
             <label>Phone:</br>
-              <input type="text" name="phone" size="30" maxlength="12">
+              <input type="tel" name="phone" size="30" maxlength="12">
             </label>
-          </br>
-          <label>Message:</br>
-            <textarea name="message" cols="20" rows="4"></textarea>
-          </label>
-        </br>
-            <input id="button" type="submit" value="Submit" />
-          </fieldset>
+            </br>
+            <label>Message:</br>
+              <textarea name="message" cols="20" rows="4" maxlength="250"></textarea>
+            </label>
+            <div class="field">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+            </br>
+                <input id="button" type="submit" value="Submit" />
+            </fieldset>
           </form>
         </div> 
         </div>
