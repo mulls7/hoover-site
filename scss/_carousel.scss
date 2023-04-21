@@ -1,8 +1,32 @@
 
 .tns-outer {
   .tns-controls {
+    margin-inline: auto;
+    width: fit-content;
     button {
-      background-color: red;
+      border: grey solid .1px;
+      border-radius: 5px;
+      padding: .2rem .5rem;
+      @include text-style-body;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin: .2rem;
+    }
+  }
+  .tns-nav {
+    margin-inline: auto;
+    width: fit-content;
+    button {
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      border: 1px solid grey;
+      margin: 1rem .1rem;
+      transform: scale(.5);
+
+    }
+    &-active {
+      background-color: grey;
     }
   }
 }
