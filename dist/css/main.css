@@ -497,6 +497,9 @@ header nav li:first-child {
   header nav li .page-link:active {
     scale: 0.9;
   }
+  header nav li .page-link:hover {
+    color: rgb(255, 195, 124);
+  }
 }
 footer {
   color: #fff;
@@ -563,9 +566,6 @@ footer .footer__social ul li img:hover {
 }
 footer .footer__social ul li img:active {
   scale: 0.9;
-}
-footer .footer__social ul li svg:hover {
-  fill: #fff;
 }
 footer .footer__address {
   background-color: rgb(47, 55, 36);
@@ -647,6 +647,9 @@ footer .page-link {
   margin-bottom: 0;
   opacity: 0.8;
   font-weight: 400;
+}
+footer .page-link:hover {
+  opacity: 1;
 }
 footer .active {
   font-weight: 700;

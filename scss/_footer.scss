@@ -49,10 +49,6 @@ footer{
           @include hover-scale2;
     
         }
-        svg:hover {
-          fill: #fff;
-        }
-
       }
     }
   }
@@ -122,6 +118,10 @@ footer{
     margin-bottom: 0;
     opacity: .8;
     font-weight: $weight-reg;
+  }
+
+  .page-link:hover {
+    opacity: 1;
   }
 
   .active {
