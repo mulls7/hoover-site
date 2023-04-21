@@ -96,7 +96,7 @@
           <p>Are you ready to have the best looking yard in the neighborhood? Call the number or fill out this form and we’ll get back to you within two days</p>
         </div>
       <div class="contact-form scroll3">
-        <form>
+        <form name="contact" method="POST" data-netlify="true">
           <fieldset>
             <legend>Contact Us
             </legend>
@@ -109,15 +109,18 @@
             </label>
           </br>
           <label>Phone:</br>
-            <input type="text" name="phone" size="30" maxlength="12">
+            <input type="tel" name="phone" size="30" maxlength="12">
           </label>
-        </br>
-        <label>Message:</br>
-          <textarea name="message" cols="20" rows="4"></textarea>
-        </label>
-      </br>
-          <input id="button" type="submit" value="Submit"/>
-        </fieldset>
+          </br>
+          <label>Message:</br>
+            <textarea name="message" cols="20" rows="4" maxlength="250"></textarea>
+          </label>
+          <div class="captcha">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+          </br>
+              <input id="button" type="submit" value="Submit" />
+          </fieldset>
         </form>
       </div> 
       </div>
