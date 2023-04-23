@@ -921,6 +921,9 @@ footer .active {
     width: 50%;
   }
 }
+.page-gallery h3 {
+  margin-bottom: 0.5rem;
+}
 .page-gallery .gallery-list__pic {
   margin-bottom: 1rem;
 }
