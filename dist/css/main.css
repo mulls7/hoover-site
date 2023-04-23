@@ -1190,10 +1190,20 @@ footer .active {
     text-align: center;
   }
 }
+.slider__title {
+  margin: 0 auto;
+  margin-bottom: -20px;
+  text-align: center;
+}
+
+.tns-outer {
+  margin-top: 0;
+}
 .tns-outer .tns-controls {
   margin-inline: auto;
   width: -moz-fit-content;
   width: fit-content;
+  display: none;
 }
 .tns-outer .tns-controls button {
   visibility: hidden;
@@ -1218,6 +1228,7 @@ footer .active {
   margin-inline: auto;
   width: -moz-fit-content;
   width: fit-content;
+  margin-top: 0;
 }
 .tns-outer .tns-nav button {
   border-radius: 50%;

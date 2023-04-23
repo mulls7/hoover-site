@@ -1,9 +1,19 @@
 
+
+.slider {
+  &__title {
+    margin: 0 auto;
+    margin-bottom: -20px;
+    text-align: center;
+  }
+}
+
 .tns-outer {
+  margin-top: 0;
   .tns-controls {
     margin-inline: auto;
     width: fit-content;
-    // display: none;
+    display: none;
     button {
       visibility: hidden;
       position: relative;
@@ -38,6 +48,7 @@
   .tns-nav {
     margin-inline: auto;
     width: fit-content;
+    margin-top: 0;
     button {
       border-radius: 50%;
       height: 20px;
