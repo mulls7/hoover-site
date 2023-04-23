@@ -1007,8 +1007,7 @@ footer .active {
   overflow: hidden;
   background-color: black;
 }
-.modal .prev,
-.modal .next {
+.modal .prev, .modal .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -1019,11 +1018,12 @@ footer .active {
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 3px 3px 0;
   -moz-user-select: none;
        user-select: none;
   -webkit-user-select: none;
   transition: all 0.3s ease;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 .modal .next {
   right: 0;
