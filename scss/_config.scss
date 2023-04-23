@@ -169,6 +169,16 @@ img {
     };
   }
 
+  @mixin hover-scale3 {
+    transition: all .3s ease;
+    &:hover {
+      scale: 1.02;
+    }
+    &:active {
+      scale: .99;
+    };
+  }
+
 a,
 body {
   color: $color-body;

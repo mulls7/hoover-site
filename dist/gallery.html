@@ -54,44 +54,170 @@
     </section>
     <section class="gallery-list container">
       <div class="gallery-list__pic">
-        <img src="images/gallery-1.png" alt="cut lawn">
+        <img src="images/gallery-1.png" alt="cut lawn" onclick="openModal();currentSlide(1)" class="hover-shadow">
       </div>
       <div class="gallery-list__pic">
-        <img src="images/gallery-2.png" alt="backyard">
+        <img src="images/gallery-2.png" alt="backyard" onclick="openModal();currentSlide(2)" class="hover-shadow">
       </div>
       <div class="gallery-list__pic">
-        <img src="images/gallery-3.png" alt="backyard with fence">
+        <img src="images/gallery-3.png" alt="backyard with fence" onclick="openModal();currentSlide(3)">
       </div>
       <div class="gallery-list__pic">
-        <img src="images/gallery-4.png" alt="trimmed hedge">
+        <img src="images/gallery-4.png" alt="trimmed hedge" onclick="openModal();currentSlide(4)">
       </div>
       <div class="gallery-list__pic">
-        <img src="images/gallery-5.png" alt="pathway with mulch alongside">
+        <img src="images/gallery-5.png" alt="pathway with mulch alongside" onclick="openModal();currentSlide(5)">
       </div>
       <div class="gallery-list__pic">
-        <img src="images/gallery-6.png" alt="mow lines">
+        <img src="images/gallery-6.png" alt="mow lines" onclick="openModal();currentSlide(6)">
       </div>
       <div class="gallery-list__pic">
-        <img src="images/gallery-7.png" alt="backyard lawn">
+        <img src="images/gallery-7.png" alt="backyard lawn" onclick="openModal();currentSlide(7)">
       </div>
       <div class="gallery-list__pic">
-        <img src="images/gallery-8.png" alt="mow lines beside driveway">
+        <img src="images/gallery-8.png" alt="mow lines beside driveway" onclick="openModal();currentSlide(8)">
       </div>
       <div class="gallery-list__pic">
-        <img src="images/gallery-9.png" alt="mow lines in backyard">
+        <img src="images/gallery-9.png" alt="mow lines in backyard" onclick="openModal();currentSlide(9)">
       </div>
       <div class="gallery-list__pic">
-        <img src="images/gallery-10.png" alt="field mow lines">
+        <img src="images/gallery-10.png" alt="field mow lines" onclick="openModal();currentSlide(10)">
       </div>
       <div class="gallery-list__pic">
-        <img src="images/gallery-11.png" alt="lawn with sky over">
+        <img src="images/gallery-11.png" alt="lawn with sky over" onclick="openModal();currentSlide(11)">
       </div>
       <div class="gallery-list__pic">
-        <img src="images/gallery-12.png" alt="mow lines">
+        <img src="images/gallery-12.png" alt="mow lines" onclick="openModal();currentSlide(12)">
       </div>
-      
     </section>
   </main>
+  <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="images/gallery-1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="images/gallery-2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="images/gallery-3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="images/gallery-4.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="images/gallery-5.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="images/gallery-6.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="images/gallery-7.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="images/gallery-8.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="images/gallery-9.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="images/gallery-10.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="images/gallery-11.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="images/gallery-12.png" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column-flex">
+      <div class="column">
+        <img class="demo" src="images/gallery-1.png" onclick="currentSlide(1)" alt="Lawncare">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/gallery-2.png" onclick="currentSlide(2)" alt="Lawncare">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/gallery-3.png" onclick="currentSlide(3)" alt="Lawncare">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/gallery-4.png" onclick="currentSlide(4)" alt="Hedge Trimming">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/gallery-5.png" onclick="currentSlide(5)" alt="Mulching">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/gallery-6.png" onclick="currentSlide(6)" alt="Lawncare">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/gallery-7.png" onclick="currentSlide(7)" alt="Lawncare">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/gallery-8.png" onclick="currentSlide(8)" alt="Lawncare">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/gallery-9.png" onclick="currentSlide(9)" alt="Lawncare">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/gallery-10.png" onclick="currentSlide(10)" alt="Lawncare">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/gallery-11.png" onclick="currentSlide(11)" alt="Lawncare">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/gallery-12.png" onclick="currentSlide(12)" alt="Lawncare">
+      </div>
+    </div>
+      
+  </div>
+</div>
   <div class="full-width-yellow yellow-appear">
     <h2>Ready to get started?</h2>
     <a href="contact.html" class="button">Contact us &#xbb;</a>
@@ -145,6 +271,49 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   <script src="scripts.js"></script>
+
+  <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
   
 </body>
 </html>
