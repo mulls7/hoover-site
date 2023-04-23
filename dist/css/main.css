@@ -1190,6 +1190,12 @@ footer .active {
     text-align: center;
   }
 }
+.slider {
+  margin: 4rem 0;
+}
+.slider .button {
+  margin: 1rem auto;
+}
 .slider__title {
   margin: 0 auto;
   margin-bottom: -20px;
