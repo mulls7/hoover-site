@@ -752,6 +752,7 @@ footer .active {
     width: calc(100% - 2.25rem);
     height: -moz-fit-content;
     height: fit-content;
+    transform: translate(1rem, 12rem);
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   }
   .hero__overlay .hero__overlay--child {

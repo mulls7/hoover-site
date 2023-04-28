@@ -72,6 +72,8 @@
       position: absolute;
       width: calc(100% - 2.25rem);
       height: fit-content;
+      transform: translate(1rem, 12rem);
+
       
 
       @include text-shadow();
