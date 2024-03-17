@@ -1,9 +1,16 @@
 
+.hide {
+  display: none;
+}
 .page-services {
    
   .services__services {
     display: grid;
     grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+    &:last-child {
+      margin-bottom: 0rem;
+    }
     ul {
       list-style-type: none;
       margin: 0;
