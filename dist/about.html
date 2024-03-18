@@ -49,7 +49,7 @@
     <div id="hoover-pic">
       <figure>
         <img src="images/hoover-brothers.png" alt="the  hoover brothers, Collin on the left and Braydon on the right" style="border-radius: 0 1rem 0rem 1rem;">
-        <figcaption><i>The Hoover Brothers: Left: Collin. Right: Braydon.</i></figcaption>
+        <figcaption><i>The Hoover Brothers: Left: Braydon. Right: Collin.</i></figcaption>
       </figure>
     </div>
     <section id="about-content">
@@ -62,7 +62,7 @@
       </div>
       <div id="hoover-pic1">
         <figure>
-          <img id="hoover-pic-2" src="images/hoover-brothers.png" alt="the  hoover brothers, Collin on the left and Braydon on the right">
+          <img id="hoover-pic-2" src="images/hoover-brothers.png" alt="the  hoover brothers, Collin on the left and Braydon on the right"style="border-radius: 0 1rem 0rem 1rem;">
           <figcaption><i>The Hoover Brothers: Left: Collin. Right: Braydon.</i></figcaption>
         </figure>
       </div>
@@ -132,10 +132,21 @@
     color: #fff;
     margin: 0 auto;
     margin-bottom: 0rem;
-    transition: all .3s ease;">Book Online</button>
+    transition: all .3s ease;"
+    onmouseover="mouseover()"
+    onmouseout="mouseout()"
+    >Request a Quote</button>
     <link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
     <script src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_dialog_snippet.js" clienthub_id="08ccdaf8-4e6a-4801-84bf-a164ac9b08b1" form_url="https://clienthub.getjobber.com/client_hubs/08ccdaf8-4e6a-4801-84bf-a164ac9b08b1/public/work_request/embedded_dialog_work_request_form"></script>
-    
+    <script>
+      function mouseover() {
+          document.getElementById("work-request-button-08ccdaf8-4e6a-4801-84bf-a164ac9b08b1").style.scale = "1.07";
+      }
+       
+      function mouseout() {
+          document.getElementById("work-request-button-08ccdaf8-4e6a-4801-84bf-a164ac9b08b1").style.scale = "1";
+      }
+  </script> 
   </section>
   <footer>
     <div class="footer__logo">
