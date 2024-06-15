@@ -280,6 +280,10 @@ body {
   width: 50%;
 }
 
+.center {
+  text-align: center;
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }
