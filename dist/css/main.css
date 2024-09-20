@@ -135,6 +135,7 @@ table {
 
 .center {
   text-align: center;
+  margin: 0 auto;
 }
 
 /* Center body and fix to minimum width */
@@ -162,6 +163,7 @@ table {
   }
   .full-width-yellow {
     text-align: center;
+    max-width: 90em;
   }
   .full-width-yellow .button {
     margin-inline: auto;

@@ -17,6 +17,7 @@ $color-yellow-200: rgba(255,225,189,1);
 
 .center {
   text-align: center;
+  margin: 0 auto;
 }
 
 @mixin text-style-button() {
@@ -55,10 +56,12 @@ $color-yellow-200: rgba(255,225,189,1);
   .container {
     padding-left: 2rem;
     padding-right: 2rem;
+    
   }
 
   .full-width-yellow {
     text-align: center;
+    max-width: 90em;
     .button {
       margin-inline: auto;
     }
