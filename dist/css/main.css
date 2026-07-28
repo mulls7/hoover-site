@@ -963,6 +963,12 @@ footer .active {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
 }
+.gallery-list img {
+  aspect-ratio: 3/4;
+  border-radius: 0rem 1rem 0rem 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .modal {
   /* The Modal (background) */
@@ -1003,7 +1009,12 @@ footer .active {
   margin: auto;
   padding: 0;
   width: 90%;
-  max-width: 1000px;
+  max-width: 500px;
+}
+.modal .modal-content img {
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .modal .close {
   color: white;
